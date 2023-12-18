@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "geiger",
+  "version": "${version}",
+  "name": "geiger",
+  "description": "A general-purpose utility library.",
+  "authors": ["RadioactiveSnowball"],
+  "contact": {
+    "repo": "https://github.com/radioactivesnowball/geiger"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": ["snow.geiger.client.GeigerClient"],
+    "main": ["snow.geiger.Geiger"]
+  },
+  "mixins": ["geiger.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
